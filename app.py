@@ -7,7 +7,7 @@ def home():
     return """
     <h1>Aplicação Flask no Render</h1>
     <p>Rota principal (/)</p>
-    /autTestar rota /aut</a>
+    /aut Testar rota /aut</a>
     """
 
 @app.route("/aut")
@@ -16,6 +16,14 @@ def aut():
         "utilizador": "rui",
         "perfil": "Administrador",
         "autenticado": True
+    })
+
+@app.route("/new")
+def aut():
+    return jsonify({
+        "utilizador": "rui",
+        "perfil": "user",
+        "autenticado": False
     })
 
 if __name__ == "__main__":
