@@ -19,7 +19,7 @@ def aut():
     })
 
 @app.route("/new")
-def aut():
+def new():
     return jsonify({
         "utilizador": "rui",
         "perfil": "user",
